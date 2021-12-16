@@ -14,8 +14,9 @@ func main() {
 	case 1:
 		fmt.Print("Comiezo Programa de Prueba Corrutinas\n")
 		done := make(chan bool, 1)
-		go GorrutinaA(done)
+		go CorrutinaA(done)
 	case 2:
+		fmt.Print("Comiezo Programa de Simulador De Banco\n")
 		done1 := make(chan bool, 1)
 		go banco(4, 16, 4, done1)
 	}
